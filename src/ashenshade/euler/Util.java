@@ -12,7 +12,13 @@ public class Util {
 
 	public static boolean isPrime(long test) {
 		
-		for(long i = 2L; i <= Math.sqrt(test); i++) {
+		if(test != 2 && test % 2 == 0) {
+			return false;
+		}
+		
+		for(long i = 3L; i <= Math.sqrt(test); i+=2) {
+//		for(long i = 3L; i < test/2; i+=2) {
+
 			if(isAFactor(test, i)) {
 				return false;
 			}
