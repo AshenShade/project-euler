@@ -1,6 +1,6 @@
 package ashenshade.euler;
 
-import ashenshade.euler.problems.Problem11;
+import ashenshade.euler.problems.Problem13;
 
 public class Runner {
 
@@ -20,8 +20,10 @@ public class Runner {
 //		Problem8.run(13); // test
 //		Problem10.run(10); // sample - 17
 //		Problem10.run(2000000); // test
-		Problem11.run();
-		
+//		Problem11.run();
+//		Problem12.run(5);  // sample - 28
+//		Problem12.run(500); // test
+		Problem13.run();
 	}
 
 }

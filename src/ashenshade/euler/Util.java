@@ -1,5 +1,8 @@
 package ashenshade.euler;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Util {
 
 	public static boolean isAFactor(long limit, long test) {
@@ -38,6 +41,21 @@ public class Util {
 			}
 		}
 		return true;
+	}
+	
+	public static Set<Long> getDivisors(long test) {
+		
+		Set<Long> divisors = new HashSet<>();
+		
+		for(long i = 1L; i < Math.sqrt(test); i++) {
+			if(test % i == 0) {
+				divisors.add(i);
+				divisors.add(test/i);
+			}
+		}
+		
+		return divisors;
+		
 	}
 	
 }
